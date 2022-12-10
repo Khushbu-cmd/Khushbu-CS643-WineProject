@@ -24,7 +24,7 @@ RUN (echo 'export SPARK_HOME=/opt/spark' >> ~/.bashrc && echo 'export PATH=$SPAR
 
 
 RUN mkdir /wineapp 
-COPY predict.py  /wineapp
+COPY Wine-Predict.py  /wineapp
 
 
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
